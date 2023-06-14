@@ -1,0 +1,227 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #EEF5FF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #03285B;
+}
+
+p, span, label {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+button {
+  border-radius: 5px;
+  padding: 9px;
+  width: 20%;
+  font-weight: 600;
+  color: #EEF5FF;
+  background-color: #03285B;
+  margin: 10px;
+}
+
+.steps {
+  color: white;
+  font-weight: 600;
+}
+
+.steps span {
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.steps-selected {
+  background-color: rgb(151, 191, 197);
+  color: #03285B;
+}
+
+.hidden {
+  display: none;
+}
+
+.inter-container {
+  width: 130px;
+  margin: 0 auto;
+  display: inline;
+}
+
+.actionBtn1 {
+  float: left;
+  width: 130px;
+}
+
+.actionBtn2 {
+  float: right;
+  width: 225px;
+}
+
+#back_button {
+  color: gray;
+  cursor: pointer;
+}
+
+#send_button:hover {
+  background-color: rgb(151, 191, 197);
+  color: black;
+  cursor: pointer;
+}
+
+.inactive_button {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+}
+
+#button_next {
+  cursor: pointer;
+}
+
+.plan {
+  padding: 7px;
+  border: 1px solid rgb(183, 179, 179);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.planActive {
+  background-color: rgba(91, 86, 186, 0.8823529412);
+  color: white;
+}
+.planActive h3 {
+  color: #EEF5FF;
+}
+
+.plan:hover {
+  border: 1px solid rgba(91, 86, 186, 0.8823529412);
+  background-color: aliceblue;
+}
+
+.error_message {
+  color: rgb(243, 87, 87);
+  margin-left: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success_message {
+  display: none;
+  justify-content: center;
+}
+
+.info_message {
+  margin: 25px;
+  line-height: 40px;
+  background-color: #04AA6D;
+  border-radius: 5px;
+  width: 50%;
+  color: white;
+  justify-content: center;
+  display: flex;
+}
+
+.success_message_active {
+  display: flex;
+}
+
+@media screen and (min-width: 250px) {
+  .container {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin: 10px;
+    line-height: 20px;
+    overflow: hidden;
+  }
+  input {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    width: 50%;
+  }
+  .row {
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .col {
+    flex-direction: column;
+    margin: 25px;
+    padding: 35px;
+  }
+  .steps p {
+    display: inline-block;
+    margin: 10px;
+    font-size: 13px;
+  }
+  .actionBtn1 {
+    float: inline-end;
+    width: 130px;
+  }
+  .actionBtn2 {
+    float: inline-start;
+    width: 225px;
+  }
+  .inter-container {
+    width: 130px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    line-height: 40px;
+    overflow: hidden;
+  }
+  input {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .col {
+    flex-direction: row;
+    margin: 25px;
+    padding: 35px;
+  }
+  .steps p {
+    display: block;
+    margin: 10px;
+    font-size: 13px;
+  }
+  .actionBtn1 {
+    float: left;
+    width: 130px;
+  }
+  .actionBtn2 {
+    float: right;
+    width: 225px;
+  }
+  .inter-container {
+    width: 130px;
+    margin: 0 auto;
+    display: inline;
+  }
+}/*# sourceMappingURL=style.css.map */
